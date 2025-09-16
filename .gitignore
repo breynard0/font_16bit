@@ -1,0 +1,12 @@
+bin
+lib
+Testing
+.ninja_deps
+.ninja_log
+build.ninja
+cmake_install.cmake
+CMakeCache.txt
+.cmake
+cmake-build-debug
+CMakeFiles
+.ida
