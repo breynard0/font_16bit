@@ -15,6 +15,8 @@ add_library(font_16bit STATIC
         library/inc/font_16.h
         library/inc/characters/other.h
         library/src/characters/other.c
+        library/inc/characters/uppercase.h
+        library/src/characters/uppercase.c
 )
 target_include_directories(font_16bit
         PUBLIC

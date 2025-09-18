@@ -19,21 +19,23 @@ int main()
         ClearBackground(RAYWHITE);
 
         int i = 40;
-        for (int x = 0; x < screenWidth; x += size)
+        for (int y = 0; y < screenHeight; y += size)
         {
-            for (int y = 0; y < screenHeight; y += size)
+            for (int x = 0; x < screenWidth; x += size)
             {
                 short buffer[16];
                 populate_letter_buffer((char)i, buffer);
-
-                for (int x1 = 0; x1 < 16; x1++)
+                if (i <= 126)
                 {
-                    for (int y1 = 0; y1 < 16; y1++)
+                    for (int x1 = 0; x1 < 16; x1++)
                     {
-                        const short filled = get_pixel(buffer, x1, y1);
-                        if (filled)
+                        for (int y1 = 0; y1 < 16; y1++)
                         {
-                            DrawRectangle(x + x1 * (size / 16), y + y1 * (size / 16), size / 16, size / 16, BLACK);
+                            const short filled = get_pixel(buffer, x1, y1);
+                            if (filled)
+                            {
+                                DrawRectangle(x + x1 * (size / 16), y + y1 * (size / 16), size / 16, size / 16, BLACK);
+                            }
                         }
                     }
                 }
