@@ -1,4 +1,5 @@
 # 16 Bit Binary Bitmap Font
+![Build](https://github.com/breynard0/font_16bit/actions/workflows/cmake-single-platform.yml/badge.svg)
 
 ## What is included?
 
