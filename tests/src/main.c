@@ -18,7 +18,7 @@ int main()
 
         ClearBackground(RAYWHITE);
 
-        int i = 40;
+        int i = 32;
         for (int y = 0; y < screenHeight; y += size)
         {
             for (int x = 0; x < screenWidth; x += size)

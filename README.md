@@ -3,7 +3,7 @@
 
 ## What is included?
 
-ASCII characters 40 through 126 are included here
+ASCII characters 32 through 126 are included here
 
 For each character, a short array with length of 16 encodes the letter in its bits, and there is also another short that
 says the maximum width of that character. This width value is rounded up to the nearest even number, and the left and
@@ -16,5 +16,5 @@ it. There are functions for adding underline and strikethrough effects to the le
 ## Conventions
 
 - Uppercase letters and tall punctuation are 12 tall (margin 1 on top 3 on bottom), 8-14 wide
-- Lowercase letters are 8 tall (margin 5 on top 3 on bottom), 8-12 wide
+- Lowercase letters are between 8 and 12 tall (margin 1-5 on top 1 on bottom) or the same height as uppercase, 8-14 wide (other than 'i', which is 2 wide)
 - Other characters such as periods or commas are smaller
