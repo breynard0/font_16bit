@@ -217,6 +217,178 @@ int populate_letter_buffer(const char letter, short buffer[16])
         reference = &LETTER_LOWER_Z[0];
         out_width = LETTER_LOWER_Z_WIDTH;
         break;
+    case ' ':
+        reference = &LETTER_SPACE[0];
+        out_width = LETTER_SPACE_WIDTH;
+        break;
+    case '!':
+        reference = &LETTER_EXCLAMATION[0];
+        out_width = LETTER_EXCLAMATION_WIDTH;
+        break;
+    case '\"':
+        reference = &LETTER_DOUBLE_QUOTE[0];
+        out_width = LETTER_DOUBLE_QUOTE_WIDTH;
+        break;
+    case '#':
+        reference = &LETTER_HASHTAG[0];
+        out_width = LETTER_HASHTAG_WIDTH;
+        break;
+    case '$':
+        reference = &LETTER_DOLLAR[0];
+        out_width = LETTER_DOLLAR_WIDTH;
+        break;
+    case '%':
+        reference = &LETTER_PERCENT[0];
+        out_width = LETTER_PERCENT_WIDTH;
+        break;
+    case '&':
+        reference = &LETTER_AMPERSAND[0];
+        out_width = LETTER_AMPERSAND_WIDTH;
+        break;
+    case '\'':
+        reference = &LETTER_SINGLE_QUOTE[0];
+        out_width = LETTER_SINGLE_QUOTE_WIDTH;
+        break;
+    case '(':
+        reference = &LETTER_OPEN_PARENTHESIS[0];
+        out_width = LETTER_OPEN_PARENTHESIS_WIDTH;
+        break;
+    case ')':
+        reference = &LETTER_CLOSE_PARENTHESIS[0];
+        out_width = LETTER_CLOSE_PARENTHESIS_WIDTH;
+        break;
+    case '*':
+        reference = &LETTER_ASTERISK[0];
+        out_width = LETTER_ASTERISK_WIDTH;
+        break;
+    case '+':
+        reference = &LETTER_PLUS[0];
+        out_width = LETTER_PLUS_WIDTH;
+        break;
+    case ',':
+        reference = &LETTER_COMMA[0];
+        out_width = LETTER_COMMA_WIDTH;
+        break;
+    case '-':
+        reference = &LETTER_DASH[0];
+        out_width = LETTER_DASH_WIDTH;
+        break;
+    case '.':
+        reference = &LETTER_PERIOD[0];
+        out_width = LETTER_PERIOD_WIDTH;
+        break;
+    case '/':
+        reference = &LETTER_SLASH[0];
+        out_width = LETTER_SLASH_WIDTH;
+        break;
+    case '0':
+        reference = &LETTER_ZERO[0];
+        out_width = LETTER_ZERO_WIDTH;
+        break;
+    case '1':
+        reference = &LETTER_ONE[0];
+        out_width = LETTER_ONE_WIDTH;
+        break;
+    case '2':
+        reference = &LETTER_TWO[0];
+        out_width = LETTER_TWO_WIDTH;
+        break;
+    case '3':
+        reference = &LETTER_THREE[0];
+        out_width = LETTER_THREE_WIDTH;
+        break;
+    case '4':
+        reference = &LETTER_FOUR[0];
+        out_width = LETTER_FOUR_WIDTH;
+        break;
+    case '5':
+        reference = &LETTER_FIVE[0];
+        out_width = LETTER_FIVE_WIDTH;
+        break;
+    case '6':
+        reference = &LETTER_SIX[0];
+        out_width = LETTER_SIX_WIDTH;
+        break;
+    case '7':
+        reference = &LETTER_SEVEN[0];
+        out_width = LETTER_SEVEN_WIDTH;
+        break;
+    case '8':
+        reference = &LETTER_EIGHT[0];
+        out_width = LETTER_EIGHT_WIDTH;
+        break;
+    case '9':
+        reference = &LETTER_NINE[0];
+        out_width = LETTER_NINE_WIDTH;
+        break;
+    case ':':
+        reference = &LETTER_COLON[0];
+        out_width = LETTER_COLON_WIDTH;
+        break;
+    case ';':
+        reference = &LETTER_SEMICOLON[0];
+        out_width = LETTER_SEMICOLON_WIDTH;
+        break;
+    case '<':
+        reference = &LETTER_LESS_THAN[0];
+        out_width = LETTER_LESS_THAN_WIDTH;
+        break;
+    case '=':
+        reference = &LETTER_EQUAL[0];
+        out_width = LETTER_EQUAL_WIDTH;
+        break;
+    case '>':
+        reference = &LETTER_GREATER_THAN[0];
+        out_width = LETTER_GREATER_THAN_WIDTH;
+        break;
+    case '?':
+        reference = &LETTER_QUESTION[0];
+        out_width = LETTER_QUESTION_WIDTH;
+        break;
+    case '@':
+        reference = &LETTER_AT[0];
+        out_width = LETTER_AT_WIDTH;
+        break;
+    case '[':
+        reference = &LETTER_OPEN_SQUARE[0];
+        out_width = LETTER_OPEN_SQUARE_WIDTH;
+        break;
+    case '\\':
+        reference = &LETTER_BACKSLASH[0];
+        out_width = LETTER_BACKSLASH_WIDTH;
+        break;
+    case ']':
+        reference = &LETTER_CLOSE_SQUARE[0];
+        out_width = LETTER_CLOSE_SQUARE_WIDTH;
+        break;
+    case '^':
+        reference = &LETTER_CARET[0];
+        out_width = LETTER_CARET_WIDTH;
+        break;
+    case '_':
+        reference = &LETTER_UNDERSCORE[0];
+        out_width = LETTER_UNDERSCORE_WIDTH;
+        break;
+    case '`':
+        reference = &LETTER_GRAVE[0];
+        out_width = LETTER_GRAVE_WIDTH;
+        break;
+    case '{':
+        reference = &LETTER_OPEN_CURLY[0];
+        out_width = LETTER_OPEN_CURLY_WIDTH;
+        break;
+    case '|':
+        reference = &LETTER_VERTICAL_BAR[0];
+        out_width = LETTER_VERTICAL_BAR_WIDTH;
+        break;
+    case '}':
+        reference = &LETTER_CLOSE_CURLY[0];
+        out_width = LETTER_CLOSE_CURLY_WIDTH;
+        break;
+    case '~':
+        reference = &LETTER_TILDE[0];
+        out_width = LETTER_TILDE_WIDTH;
+        break;
     default:
         reference = &LETTER_UNKNOWN[0];
         out_width = LETTER_UNKNOWN_WIDTH;
