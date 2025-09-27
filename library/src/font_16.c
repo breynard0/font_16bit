@@ -2,10 +2,10 @@
 #include "characters/lowercase.h"
 #include "characters/other.h"
 
-int populate_letter_buffer(const char letter, short buffer[16])
+int populate_letter_buffer(const char letter, unsigned short buffer[16])
 {
-    const short* reference;
-    int out_width = 16;
+    const unsigned short* reference;
+    int out_width;
 
     switch (letter)
     {
@@ -400,8 +400,18 @@ int populate_letter_buffer(const char letter, short buffer[16])
     return out_width;
 }
 
-short get_pixel(const short buffer[16], const unsigned short x, const unsigned short y)
+unsigned short get_pixel(const unsigned short buffer[16], const unsigned short x, const unsigned short y)
 {
-    const short row = buffer[y];
-    return (short)(row & 0x1 << (16 - x));
+    const unsigned short row = buffer[y];
+    return row & 0x1 << (16 - x);
+}
+
+void convert_strikethrough(unsigned short buffer[16])
+{
+    buffer[8] = 0xFFFF;
+}
+
+void convert_underline(unsigned short buffer[16])
+{
+    buffer[12] = 0xFFFF;
 }
